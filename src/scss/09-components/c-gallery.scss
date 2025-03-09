@@ -58,7 +58,14 @@
         cursor: pointer;
         padding: 3px;
         margin-bottom: 48px;
-        overflow: hidden;                
+        overflow: hidden;
+        transition: all .3s ease-in-out;   
+        
+        &:hover{
+
+            opacity: .5;
+
+        }
         
     }
     

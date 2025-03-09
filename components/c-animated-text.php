@@ -8,9 +8,9 @@
 
         $the_img = wp_get_attachment_image( $c_animated_text__image['ID'], 'custom-full', "", array("class" => "c-animated-text__image js-anim-image o-bg-s__image", "data-speed" => "0.9") );        
 
-        $the_img_bg = wp_get_attachment_image( $c_animated_text__image_bg['ID'], 'custom-full', "", array("class" => "c-animated-text__image-bg js-anim-image o-bg-s__image", "data-speed" => "1.3") );
+        $the_img_bg = wp_get_attachment_image( $c_animated_text__image_bg['ID'], 'custom-full', "", array("class" => "c-animated-text__image-bg o-bg-s__image", "data-speed" => "0.7") );
 
-        $the_img_bg_2 = wp_get_attachment_image( $c_animated_text__image_bg['ID'], 'custom-full', "", array("class" => "c-animated-text__image-bg js-anim-image o-bg-s__image", "data-speed" => "1.3") );
+        $the_img_bg_2 = wp_get_attachment_image( $c_animated_text__image_bg['ID'], 'custom-full', "", array("class" => "c-animated-text__image-bg o-bg-s__image", "data-speed" => "1.6") );
         
         ?>
 
@@ -32,7 +32,7 @@
                             </div>                            
                         </div>    
                         <div class="c-animated-text__col o-col-8@md o-col-push-2@md">
-                            <div class="c-animated-text__wrapper-image">
+                            <div class="c-animated-text__wrapper-image shadow-img">
                                 <?php echo $the_img; ?>
                                 <div class="c-animated-text__wrapper-description o-font-display-button">
                                     <div class="c-animated-text__description"><?php echo $c_animated_text__description; ?></div>

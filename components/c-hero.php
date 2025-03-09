@@ -33,11 +33,11 @@ if(av_component_get_option__is_active($component_global_settings)){
                         </div>                
                     <?php } ?>
                     <?php if(!!$the_img_big){ ?>                
-                        <div class="c-hero__wrapper-image c-hero__wrapper-image--big">
+                        <div class="c-hero__wrapper-image c-hero__wrapper-image--big shadow-img">
                             <?php echo $the_img_big; ?>                                                   
                         </div>                
                     <?php } ?>                                                          
-                    <div class="c-hero__col | o-col-10@md o-col-push-3@md | o-col-8@sm | o-col-4@xs">
+                    <div class="c-hero__col | o-col-10@md | o-col-8@sm | o-col-4@xs">
                         <div class="c-hero__wrapper">
                             <?php 
                                 if(!!$c_hero__overline){                                    

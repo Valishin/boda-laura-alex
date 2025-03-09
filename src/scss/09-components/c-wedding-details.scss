@@ -1,0 +1,100 @@
+.c-wedding-details{
+
+    $b : &;
+    
+    @include av-prepare-debug();
+
+    position: relative;
+    z-index: 2;
+    height: 100vh;
+
+    &__inner{
+
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        
+    }
+
+    &__container{
+
+        position: relative;
+        z-index: 1;
+
+    }
+
+    &__wrapper-title{
+
+        display: block;
+        width: 100%; 
+        text-align: center; 
+        padding-bottom: 64px;
+
+    }
+
+    &__title{
+
+        color: var(--alt-color);
+        display: block;
+        width: 100%;       
+        
+    }
+
+    &__wrapper-image{
+
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        overflow: hidden;
+        opacity: .6;
+
+    }
+
+    &__image{
+
+        position: relative;
+        top: 0px;
+        left: 0px;
+
+    }
+
+    &__wrapper-block-image{
+
+        position: relative;               
+        z-index: 2;
+        display: block;
+        overflow: hidden;
+
+        @include av-aspect-ratio(110%);
+
+    }
+
+    &__block-image{
+
+        position: absolute;
+        top: -10px;
+        left: 0px;
+        width: 100%;
+        height: 140%;
+        object-fit: cover;
+
+    }
+
+    &__wrapper-block-text{
+
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        background-color: var(--color-brand-primary);
+        padding: 20px 15px;
+
+    }
+
+    &__block-text{
+
+        text-align: center;
+
+    }
+    
+}

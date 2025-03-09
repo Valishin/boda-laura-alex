@@ -232,6 +232,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_67cdfd33545f9": {
+                    "key": "layout_67cdfd33545f9",
+                    "name": "c-wedding-details",
+                    "label": "Wedding details",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_67cdfd33545fa",
+                            "label": "c wedding details",
+                            "name": "c_wedding_details",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_67cddb9ba46fc"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add component",
@@ -272,5 +303,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1741470750
+    "modified": 1741553013
 }

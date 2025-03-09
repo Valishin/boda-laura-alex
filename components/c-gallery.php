@@ -33,7 +33,7 @@ if(av_component_get_option__is_active($component_global_settings)){
                                                 $image_path = get_attached_file( $current_item['image']['ID'] );
                                                 $image_size = getimagesize( $image_path );
                                                 ?>                                            
-                                                    <a href="<?php echo $the_img_url; ?>" data-pswp-width="<?php echo $image_size[0]; ?>" data-pswp-height="<?php echo $image_size[1]; ?>" target="_blank" class="c-gallery__wrapper-image">
+                                                    <a href="<?php echo $the_img_url; ?>" data-pswp-width="<?php echo $image_size[0]; ?>" data-pswp-height="<?php echo $image_size[1]; ?>" target="_blank" class="c-gallery__wrapper-image shadow-img">
                                                         <?php echo $the_img; ?>
                                                     </a>                                                                        
                                                 <?php

@@ -236,7 +236,7 @@ window.requestAnimationFrame = (() => {
                         markers: false,
                         trigger: secondTextMovement,
                         scrub: true,
-                        end: () => `+=${600}`,
+                        end: () => `+=${800}`,
                     }
                 }
             );
@@ -442,7 +442,32 @@ window.requestAnimationFrame = (() => {
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
         
         L.marker(coordinates, {icon: myIcon}).addTo(map)            
-    }    
+    } 
+    
+    const startCountdown = (targetDate) => {
+        const updateCountdown = () => {
+          const now = new Date().getTime();
+          const timeLeft = targetDate - now;
+    
+          if (timeLeft < 0) {
+            document.getElementById("countdown").innerHTML = "¡Tiempo terminado!";
+            clearInterval(interval);
+            return;
+          }
+    
+          const months = Math.floor(timeLeft / (1000 * 60 * 60 * 24 * 30));
+          const days = Math.floor((timeLeft % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+    
+          document.getElementById("countdown").innerHTML =
+            `${months} meses, ${days} días, ${hours}h ${minutes}m ${seconds}s`;
+        }
+    
+        updateCountdown(); 
+        const interval = setInterval(updateCountdown, 1000);
+      }               
 
     // END GLOBAL FUNCTIONS ---------------------------- 
 
@@ -510,6 +535,9 @@ window.requestAnimationFrame = (() => {
     document.addEventListener('DOMContentLoaded', () => {
         av_remove_loader()
         lightbox.init();
+
+        const targetDate = new Date("2025-12-06 08:37:00").getTime(); // Fecha objetivo 
+        startCountdown(targetDate);
     })
     // END ON LOAD --------------------------------------
 

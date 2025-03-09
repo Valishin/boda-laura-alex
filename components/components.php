@@ -99,7 +99,20 @@
                     $c_animated_text__title_2       = get_sub_field($component_slug . '__title-2');
                     $c_animated_text__description   = get_sub_field($component_slug . '__description'); 
                     $c_animated_text__image         = get_sub_field($component_slug . '__image'); 
-                    $c_animated_text__image_bg      = get_sub_field($component_slug . '__image-bg');                
+                    $c_animated_text__image_bg      = get_sub_field($component_slug . '__image-bg'); 
+
+                break;
+                    
+                case 'c-wedding-details':
+
+                    $c_wedding_details__title       = get_sub_field($component_slug . '__title');
+                    $c_wedding_details__image      = get_sub_field($component_slug . '__image');
+                    $c_wedding_details__block_image_1      = get_sub_field($component_slug . '__block-image-1'); 
+                    $c_wedding_details__block_image_2      = get_sub_field($component_slug . '__block-image-2'); 
+                    $c_wedding_details__block_image_3      = get_sub_field($component_slug . '__block-image-3'); 
+                    $c_wedding_details__block_text_1      = get_sub_field($component_slug . '__block-text-1'); 
+                    $c_wedding_details__block_text_2      = get_sub_field($component_slug . '__block-text-2'); 
+                    $c_wedding_details__block_text_3      = get_sub_field($component_slug . '__block-text-3'); 
 
                 default:
                     // DEFAULT
