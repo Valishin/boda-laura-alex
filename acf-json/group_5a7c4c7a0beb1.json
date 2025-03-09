@@ -201,6 +201,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_67ccbbfc3afa1": {
+                    "key": "layout_67ccbbfc3afa1",
+                    "name": "c-animated-text",
+                    "label": "Animated Text",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_67ccbbfc3afa2",
+                            "label": "c animated text",
+                            "name": "c_animated_text",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_67ccbb3b27620"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add component",
@@ -241,5 +272,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1712919030
+    "modified": 1741470750
 }

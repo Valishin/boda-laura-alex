@@ -8,7 +8,7 @@ if(av_component_get_option__is_active($component_global_settings)){
 
     $tag = av_get_tag_for_title();
 
-    $the_img_small = wp_get_attachment_image( $c_hero__small_image['ID'], 'custom-full', "", array("class" => "c-hero__image o-bg-s__image js-anim-image", "data-speed" => "0.9") );
+    $the_img_small = wp_get_attachment_image( $c_hero__small_image['ID'], 'custom-full', "", array("class" => "c-hero__image c-hero__image--small o-bg-s__image js-anim-image", "data-speed" => "0.9") );
 
     $the_img_big = wp_get_attachment_image( $c_hero__big_image['ID'], 'custom-full', "", array("class" => "c-hero__image o-bg-s__image js-anim-image", "data-speed" => "0.9") );
 
@@ -23,9 +23,7 @@ if(av_component_get_option__is_active($component_global_settings)){
             >      
                 <?php if($c_hero__arrow_scroll){ ?>
                     <div class="c-hero__wrapper-arrow">
-                        <svg width="50px" height="50px" viewBox="0 0 16 16">
-                            <path fill="black" fill-rule="evenodd" d="M10 14a2 2 0 1 1-4 0a2 2 0 0 1 4 0m1.78-8.841a.75.75 0 0 0-1.06 0l-1.97 1.97V.75a.75.75 0 0 0-1.5 0v6.379l-1.97-1.97a.75.75 0 0 0-1.06 1.06l3.25 3.25L8 10l.53-.53l3.25-3.25a.75.75 0 0 0 0-1.061" clip-rule="evenodd"/>
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="currentColor" d="M6.707 9h4.364c-.536 1.573 2.028 3.806 4.929-.5c-2.9-4.306-5.465-2.073-4.929-.5H6.707L4.854 6.146a.5.5 0 1 0-.708.708L5.293 8h-.586L2.854 6.146a.5.5 0 1 0-.708.708L3.293 8h-.586L.854 6.146a.5.5 0 1 0-.708.708L1.793 8.5L.146 10.146a.5.5 0 0 0 .708.708L2.707 9h.586l-1.147 1.146a.5.5 0 0 0 .708.708L4.707 9h.586l-1.147 1.146a.5.5 0 0 0 .708.708z"/></svg>
                     </div>
                 <?php } ?>          
                 <div class="c-hero__container | o-container">                       
@@ -39,7 +37,7 @@ if(av_component_get_option__is_active($component_global_settings)){
                             <?php echo $the_img_big; ?>                                                   
                         </div>                
                     <?php } ?>                                                          
-                    <div class="c-hero__col | o-col-10@md o-col-push-2@md | o-col-8@sm | o-col-4@xs">
+                    <div class="c-hero__col | o-col-10@md o-col-push-3@md | o-col-8@sm | o-col-4@xs">
                         <div class="c-hero__wrapper">
                             <?php 
                                 if(!!$c_hero__overline){                                    

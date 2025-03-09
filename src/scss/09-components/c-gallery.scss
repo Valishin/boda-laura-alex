@@ -58,8 +58,7 @@
         cursor: pointer;
         padding: 3px;
         margin-bottom: 48px;
-        overflow: hidden;        
-        transition: opacity .3s ease-in-out;
+        overflow: hidden;                
         
     }
     
@@ -73,6 +72,16 @@
         object-fit: cover;    
         opacity: 0;   
         
+    }
+
+    &__wrapper-gallery{
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño */
+        gap: 20px; /* Espacio entre las imágenes */
+        justify-items: center; /* Centra las imágenes dentro de cada celda */
+        margin: 0 auto;
+
     }
 
     &__wrapper-title{

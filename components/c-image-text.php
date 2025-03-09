@@ -6,14 +6,14 @@
 
         $options = av_component_get_options($component_global_settings);
 
-        $the_img = wp_get_attachment_image( $c_image_text__image['ID'], 'custom-full', "", array("class" => "c-image-text__image") );
+        $the_img = wp_get_attachment_image( $c_image_text__image['ID'], 'custom-full', "", array("class" => "c-image-text__image js-anim-image o-bg-s__image", "data-speed" => "0.9") );
 
-        $col_image = "o-col-5@md o-col-push-2@md o-col-4@sm o-col-4@xs";
-        $col_text = "o-col-5@md o-col-4@sm o-col-4@xs";
+        $col_image = "o-col-6@md o-col-4@sm o-col-4@xs";
+        $col_text = "o-col-6@md o-col-4@sm o-col-4@xs";
 
         if($c_image_text__position == 'image-content'){
-            $col_image = "o-col-5@md o-col-4@sm o-col-4@xs";
-            $col_text = "o-col-5@md o-col-push-2@md o-col-4@sm o-col-4@xs";
+            $col_image = "o-col-6@md o-col-4@sm o-col-4@xs";
+            $col_text = "o-col-6@md o-col-4@sm o-col-4@xs";
         }
 
         ?>

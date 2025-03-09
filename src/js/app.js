@@ -8,6 +8,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { SplitText } from "gsap/SplitText"
 import { ScrollSmoother } from "gsap/ScrollSmoother"
 import L from "leaflet";
+import PhotoSwipeLightbox from 'photoswipe/lightbox';
+import 'photoswipe/style.css';
+
+const lightbox = new PhotoSwipeLightbox({
+  gallery: '#c-gallery',
+  children: 'a',
+  pswpModule: () => import('photoswipe')
+});
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText)
 
@@ -207,6 +215,50 @@ window.requestAnimationFrame = (() => {
             id: "is-inview"
         });
 
+        document.querySelectorAll('.c-animated-text').forEach((_e) => {
+            const _elem = _e;
+            const currentTextMovement = _elem.querySelector('.js-text-movement');
+            let secondTextMovement = currentTextMovement.querySelector('.c-animated-text__title');
+            let secondTextMovement2 = null;
+        
+            if (currentTextMovement.querySelector('.js-text-movement--invest')) {
+                secondTextMovement = currentTextMovement.querySelector('.c-animated-text__title--1');
+                secondTextMovement2 = currentTextMovement.querySelector('.c-animated-text__title--2');
+            }
+        
+            gsap.fromTo(
+                secondTextMovement,
+                { x: '60%' },
+                {
+                    x: '28%',
+                    ease: "Power0.easeNone",
+                    scrollTrigger: {
+                        markers: false,
+                        trigger: secondTextMovement,
+                        scrub: true,
+                        end: () => `+=${600}`,
+                    }
+                }
+            );
+        
+            if (secondTextMovement2) {
+                gsap.fromTo(
+                    secondTextMovement2,
+                    { x: '30%' },
+                    {
+                        x: '38%',
+                        ease: "Power0.easeNone",
+                        scrollTrigger: {
+                            markers: false,
+                            trigger: secondTextMovement2,
+                            scrub: true,
+                            end: () => `+=${600}`,
+                        }
+                    }
+                );
+            }
+        });
+
     }
 
     const av_gallery_image = () => {
@@ -336,8 +388,7 @@ window.requestAnimationFrame = (() => {
                     ease: "power1.inOut",
                 });
             }
-        })
-        
+        })        
 
     }
 
@@ -391,7 +442,7 @@ window.requestAnimationFrame = (() => {
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
         
         L.marker(coordinates, {icon: myIcon}).addTo(map)            
-    }
+    }    
 
     // END GLOBAL FUNCTIONS ---------------------------- 
 
@@ -458,6 +509,7 @@ window.requestAnimationFrame = (() => {
     // --- ON LOAD --------------------------------------
     document.addEventListener('DOMContentLoaded', () => {
         av_remove_loader()
+        lightbox.init();
     })
     // END ON LOAD --------------------------------------
 

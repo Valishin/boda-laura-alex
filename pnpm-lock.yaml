@@ -17,6 +17,9 @@ dependencies:
   leaflet:
     specifier: ^1.9.4
     version: 1.9.4
+  photoswipe:
+    specifier: ^5.4.4
+    version: 5.4.4
   sass:
     specifier: ^1.71.1
     version: 1.74.1
@@ -4649,6 +4652,11 @@ packages:
 
   /path-to-regexp@3.2.0:
     resolution: {integrity: sha512-jczvQbCUS7XmS7o+y1aEO9OBVFeZBQ1MDSEqmO7xSoPgOPoowY/SxLpZ6Vh97/8qHZOteiCKb7gkG9gA2ZUxJA==}
+    dev: false
+
+  /photoswipe@5.4.4:
+    resolution: {integrity: sha512-WNFHoKrkZNnvFFhbHL93WDkW3ifwVOXSW3w1UuZZelSmgXpIGiZSNlZJq37rR8YejqME2rHs9EhH9ZvlvFH2NA==}
+    engines: {node: '>= 0.12.0'}
     dev: false
 
   /picocolors@1.0.0:

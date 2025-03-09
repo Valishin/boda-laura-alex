@@ -91,6 +91,16 @@
                     $c_two_image_text__text_right   = get_sub_field($component_slug . '__text-right');
                     $c_two_image_text__cta_right    = get_sub_field($component_slug . '__cta-right');
 
+                break;
+
+                case 'c-animated-text':
+
+                    $c_animated_text__title_1       = get_sub_field($component_slug . '__title-1');
+                    $c_animated_text__title_2       = get_sub_field($component_slug . '__title-2');
+                    $c_animated_text__description   = get_sub_field($component_slug . '__description'); 
+                    $c_animated_text__image         = get_sub_field($component_slug . '__image'); 
+                    $c_animated_text__image_bg      = get_sub_field($component_slug . '__image-bg');                
+
                 default:
                     // DEFAULT
                 break;
