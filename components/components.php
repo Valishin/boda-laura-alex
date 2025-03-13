@@ -67,6 +67,8 @@
 
                     $c_gallery__gallery               = get_sub_field($component_slug . '__gallery');
                     $c_gallery__title                 = get_sub_field($component_slug . '__title');
+                    $c_gallery__bg_image              = get_sub_field($component_slug . '__bg-image');
+                    $c_gallery__bg_image_2              = get_sub_field($component_slug . '__bg-image-2');
 
                 break;
 

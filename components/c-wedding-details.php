@@ -24,12 +24,12 @@ if(av_component_get_option__is_active($component_global_settings)){
                     <?php echo $the_img; ?>
                 </div>
                 <div class="c-wedding-details__container | o-container">
-                    <div class="c-wedding-details__col o-col-12@md">
+                    <div class="c-wedding-details__col o-col-12@md o-col-8@sm o-col-4@xs">
                         <div class="c-wedding-details__wrapper-title">
-                            <div class="c-wedding-details__title o-font-display-1"><?php echo $c_wedding_details__title; ?></div>
+                            <div class="c-wedding-details__title js-split-text o-font-display-1"><?php echo $c_wedding_details__title; ?></div>
                         </div>                                                                            
                     </div>
-                    <div class="c-wedding-details__col o-col-4@md">
+                    <div class="c-wedding-details__col o-col-4@md o-col-4@sm o-col-4@xs">
                         <div class="c-wedding-details__wrapper-block-image c-wedding-details__wrapper-block-image--1">
                             <?php echo $the_img_block_1; ?>
                             <div class="c-wedding-details__wrapper-block-text">
@@ -37,7 +37,7 @@ if(av_component_get_option__is_active($component_global_settings)){
                             </div>
                         </div>
                     </div>
-                    <div class="c-wedding-details__col o-col-4@md">
+                    <div class="c-wedding-details__col o-col-4@md o-col-4@sm o-col-4@xs">
                         <div class="c-wedding-details__wrapper-block-image c-wedding-details__wrapper-block-image--2">
                             <?php echo $the_img_block_2; ?>
                             <div class="c-wedding-details__wrapper-block-text">
@@ -45,7 +45,7 @@ if(av_component_get_option__is_active($component_global_settings)){
                             </div>
                         </div>
                     </div>
-                    <div class="c-wedding-details__col o-col-4@md">
+                    <div class="c-wedding-details__col o-col-4@md o-col-4@sm o-col-4@xs">
                         <div class="c-wedding-details__wrapper-block-image c-wedding-details__wrapper-block-image--3">
                             <?php echo $the_img_block_3; ?>
                             <div class="c-wedding-details__wrapper-block-text">

@@ -41,12 +41,24 @@
 
     &__countdown{
 
-        text-align: center;
+        text-align: end;
         transition: all .3s ease-in-out;
+
+        @include sm{
+
+            text-align: center;
+
+        }
 
         .has-transform &{
 
-            transform: scale(.5);
+            transform: scale(.8);
+
+            @include sm{
+
+                transform: scale(.5);
+
+            }
 
         }
 
@@ -77,7 +89,7 @@
 
         @include md{
 
-            padding: 30px 0px;
+            padding: 10px 0px;
             transition: all .3s ease-in-out;
 
             .has-transform &{
@@ -128,8 +140,7 @@
         padding: 10px;
         font-weight: bold;
         z-index: 2;
-        transition: all .3s ease-in-out;  
-        display: none;      
+        transition: all .3s ease-in-out;       
 
         @include md{
 
@@ -147,8 +158,15 @@
 
         .has-transform &{
 
-            width: 20px;
-            height: 20px;
+            width: 30px;
+            height: 30px;
+
+            @include sm{
+
+                width: 20px;
+                height: 20px;
+
+            }
 
         }
 

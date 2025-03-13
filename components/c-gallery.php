@@ -7,6 +7,8 @@ if(av_component_get_option__is_active($component_global_settings)){
         $options = av_component_get_options($component_global_settings);
 
         $tag = av_get_tag_for_title();
+        $the_img = wp_get_attachment_image( $c_gallery__bg_image['ID'], 'custom-full', "", array("class" => "c-gallery__bg-image o-bg-s__image", "data-speed" => "1.4") );
+        $the_img_2 = wp_get_attachment_image( $c_gallery__bg_image_2['ID'], 'custom-full', "", array("class" => "c-gallery__bg-image o-bg-s__image", "data-speed" => "1.4") );
             
             ?>
 
@@ -14,7 +16,9 @@ if(av_component_get_option__is_active($component_global_settings)){
                 <div class="c-gallery | js-gallery | <?php echo $options['special-classes']; ?>">                    
                     <div 
                         class="c-gallery__inner | js-gallery__inner | <?php echo $options['color-classes']; ?> | <?php echo $options['padding-classes']; ?>"
-                        >                        
+                        >  
+                        <div class="c-gallery__wrapper-bg-image"><?php echo $the_img; ?></div> 
+                        <div class="c-gallery__wrapper-bg-image c-gallery__wrapper-bg-image--2"><?php echo $the_img_2; ?></div>                      
                         <div class="c-gallery__container | o-container">                            
                             <div class="c-gallery__col | o-col-12@md | o-col-8@sm | o-col-4@xs">
                                 <div class="c-gallery__wrapper-title">

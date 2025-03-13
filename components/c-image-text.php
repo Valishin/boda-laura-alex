@@ -42,7 +42,7 @@
                                     if(!!$c_image_text__title){ 
                                         ?>
                                             <div class="c-image-text__wrapper-title">
-                                                <h2 class="c-image-text__title | js-anim-split-title o-font-display-2"><?php echo $c_image_text__title; ?></h2>
+                                                <h2 class="c-image-text__title | js-split-text o-font-display-2"><?php echo $c_image_text__title; ?></h2>
                                             </div>
                                         <?php 
                                     }

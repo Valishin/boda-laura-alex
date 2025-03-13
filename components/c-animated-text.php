@@ -25,13 +25,13 @@
                     <div class="c-animated-text__wrapper-image-bg c-animated-text__wrapper-image-bg--1"><?php echo $the_img_bg; ?></div>
                     <div class="c-animated-text__wrapper-image-bg c-animated-text__wrapper-image-bg--2"><?php echo $the_img_bg_2; ?></div>
                     <div class="c-animated-text__container o-container o-anim-fade-in">
-                        <div class="c-animated-text__col o-col-12@md">
+                        <div class="c-animated-text__col o-col-12@md o-col-8@sm o-col-4@xs">
                             <div class="c-animated-text__wrapper-title js-text-movement o-font-display-1">
                                 <div class="c-animated-text__title c-animated-text__title--1 js-text-movement--invest"><?php echo $c_animated_text__title_1; ?></div>
                                 <div class="c-animated-text__title c-animated-text__title--2 js-text-movement--invest"><?php echo $c_animated_text__title_2; ?></div>
                             </div>                            
                         </div>    
-                        <div class="c-animated-text__col o-col-8@md o-col-push-2@md">
+                        <div class="c-animated-text__col o-col-8@md o-col-push-2@md o-col-8@sm o-col-4@xs">
                             <div class="c-animated-text__wrapper-image shadow-img">
                                 <?php echo $the_img; ?>
                                 <div class="c-animated-text__wrapper-description o-font-display-button">

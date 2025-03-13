@@ -17,6 +17,7 @@
     &__wrapper-title{
 
         padding-bottom: 56px;
+        position: relative;
 
     }
     
@@ -28,27 +29,47 @@
         overflow: hidden;
         border-radius: 5px;
 
-        @include av-aspect-ratio(106%);
+        @include av-aspect-ratio(160%);
+
+        @include md{
+
+            @include av-aspect-ratio(106%);
+
+        }
 
     }
 
     &__wrapper-image-bg{
 
         display: block;
-        width: calc(var(--col-1) * 3); 
+        width: calc(var(--col-1) * 1); 
         position: absolute;
-        left: 70px;
-        bottom: 20%;
-
+        left: 0px;
+        top: 200px;
+        
         @include av-aspect-ratio(175%);
+        
+        @include sm{
+            
+            top: initial;
+            bottom: 20%;
+            left: 70px;
+            width: calc(var(--col-1) * 3);
+
+        }
 
         &--2{
 
             left: initial;
-            right: 70px;
-            top: 40%;
-            bottom: initial;
-            // transform: rotate(180deg);
+            right: 0px;
+            bottom: initial;           
+            
+            @include sm{
+                
+                top: 40%;
+                right: 70px;
+
+            }
 
         }
 

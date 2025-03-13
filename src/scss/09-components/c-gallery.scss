@@ -9,6 +9,7 @@
     &__inner{
 
         padding: 20px 0px;
+        position: relative;
 
         @include md{
 
@@ -57,15 +58,20 @@
         position: relative;
         cursor: pointer;
         padding: 3px;
-        margin-bottom: 48px;
         overflow: hidden;
-        transition: all .3s ease-in-out;   
+        transition: all .3s ease-in-out;
         
-        &:hover{
+        @include sm{
 
-            opacity: .5;
+            // margin-bottom: 48px;
 
+            &:hover{
+    
+                opacity: .5;
+    
+            }
         }
+        
         
     }
     
@@ -84,10 +90,16 @@
     &__wrapper-gallery{
 
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño */
+        grid-template-columns: repeat(2, 1fr); /* Crea 3 columnas de igual tamaño */
         gap: 20px; /* Espacio entre las imágenes */
         justify-items: center; /* Centra las imágenes dentro de cada celda */
         margin: 0 auto;
+
+        @include sm{
+
+            grid-template-columns: repeat(3, 1fr);
+
+        }
 
     }
 
@@ -186,6 +198,43 @@
             visibility: visible;
 
         }
+
+    }
+
+    &__wrapper-bg-image{
+
+        display: block;
+        width: calc(var(--col-1) * 2); 
+        position: absolute;
+        left: 0px;
+        bottom: 50%;
+
+        @include av-aspect-ratio(175%);
+
+        @include sm{
+
+            width: calc(var(--col-1) * 2); 
+
+        }
+
+        &--2{
+
+            bottom: 15%;
+            left: initial;
+            right: 0px;
+
+        }
+
+    }
+
+    &__bg-image{
+
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
 
     }
 

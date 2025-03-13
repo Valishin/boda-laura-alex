@@ -230,7 +230,7 @@ window.requestAnimationFrame = (() => {
                 secondTextMovement,
                 { x: '60%' },
                 {
-                    x: '28%',
+                    x: '0%',
                     ease: "Power0.easeNone",
                     scrollTrigger: {
                         markers: false,
@@ -427,7 +427,7 @@ window.requestAnimationFrame = (() => {
     const av_footer_map = () => {
         const nodeMap = document.querySelector('#map')
 
-        const coordinates = [41.78334547704238, 3.0361138546487214]
+        const coordinates = [1.8513176002113194, -76.04667090481588]
 
         if(!nodeMap) return
 

@@ -55,20 +55,7 @@ if(av_component_get_option__is_active($component_global_settings)){
                                     <?php
                                 }                                
                             ?>                               
-                        </div>
-                        <?php if(!!$c_hero__cta){ ?>
-                            <div class="c-hero__wrapper-cta | c-hero__wrapper-cta--1">
-                                <?php 
-                                    av_print_button(
-                                        $c_hero__cta['url'],
-                                        $c_hero__cta['title'],
-                                        'style-1',
-                                        $c_hero__cta['target'],
-                                        'c-hero__cta'
-                                    ); 
-                                ?>
-                            </div>
-                        <?php } ?>
+                        </div>                        
                     </div>
                 </div>
             </div>
