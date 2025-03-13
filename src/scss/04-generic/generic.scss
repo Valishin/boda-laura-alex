@@ -65,6 +65,7 @@
     bottom: 15px;
     right: 15px;
     cursor: pointer;
+    display: none;
 
     @include av-font($display-caption);
 

@@ -112,14 +112,14 @@ $display-button: (
     sm: (
         "font-size"       : 15px,
         "line-height"     : 21px,
-        "letter-spacing"  : 2.64px,
+        "letter-spacing"  : 1px,
         "font-family"     : var(--font-b),
         "font-weight"     : 400,
     ),
     xs: (
         "font-size"       : 14px,
         "line-height"     : 18px,
-        "letter-spacing"  : 2.46px,
+        "letter-spacing"  : 1px,
         "font-family"     : var(--font-b),
         "font-weight"     : 400,
     )
