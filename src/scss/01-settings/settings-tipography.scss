@@ -36,14 +36,14 @@ $display-1: (
     ),
     sm: (
         "font-size"       : 54px,
-        "line-height"     : 65px,
+        "line-height"     : 54px,
         "letter-spacing"  : 0px,
         "font-family"     : var(--font-a),
         "font-weight"     : 400
     ),
     xs: (
         "font-size"       : 40px,
-        "line-height"     : 52px,
+        "line-height"     : 40px,
         "letter-spacing"  : 0px,
         "font-family"     : var(--font-a),
         "font-weight"     : 400
@@ -54,21 +54,21 @@ $display-1: (
 $display-2: (
     md: (
         "font-size"       : 56px,
-        "line-height"     : 66px,
+        "line-height"     : 48px,
         "letter-spacing"  : 0px,
         "font-family"     : var(--font-a),
         "font-weight"     : 400
     ),
     sm: (
         "font-size"       : 40px,
-        "line-height"     : 48px,
+        "line-height"     : 40px,
         "letter-spacing"  : 0px,
         "font-family"     : var(--font-a),
         "font-weight"     : 400
     ),
     xs: (
         "font-size"       : 40px,
-        "line-height"     : 48px,
+        "line-height"     : 36px,
         "letter-spacing"  : 0px,
         "font-family"     : var(--font-a),
         "font-weight"     : 400
@@ -136,15 +136,15 @@ $display-body: (
     ),
     sm: (
         "font-size"       : 16px,
-        "line-height"     : 24px,
-        "letter-spacing"  : 0.71px,
+        "line-height"     : 16px,
+        "letter-spacing"  : 0px,
         "font-family"     : var(--font-b),
         "font-weight"     : 400
     ),
     xs: (
         "font-size"       : 14px,
-        "line-height"     : 20px,
-        "letter-spacing"  : 0.53px,
+        "line-height"     : 14px,
+        "letter-spacing"  : 0px,
         "font-family"     : var(--font-b),
         "font-weight"     : 400
     )
@@ -153,21 +153,21 @@ $display-body: (
 $display-overline: (
     md: (
         "font-size"       : 18px,
-        "line-height"     : 26px,
+        "line-height"     : 19px,
         "letter-spacing"  : 0px,
         "font-family"     : var(--font-a),
         "font-weight"     : 400
     ),
     sm: (
         "font-size"       : 16px,
-        "line-height"     : 24px,
+        "line-height"     : 16px,
         "letter-spacing"  : 0px,
         "font-family"     : var(--font-a),
         "font-weight"     : 400
     ),
     xs: (
         "font-size"       : 14px,
-        "line-height"     : 20px,
+        "line-height"     : 14px,
         "letter-spacing"  : 0px,
         "font-family"     : var(--font-a),
         "font-weight"     : 400

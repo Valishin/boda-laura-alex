@@ -149,13 +149,7 @@
         overflow: hidden;
         opacity: 0;
 
-        @include av-aspect-ratio(136%);
-
-        @include sm{
-
-            margin-bottom: 0px
-
-        }
+        @include av-aspect-ratio(136%);       
 
         @include md{
 
@@ -181,13 +175,7 @@
         display: block;
         width: 100%;
         padding-bottom: 25px;
-        text-align: left;
-
-        @include sm{
-
-            padding-bottom: 20px;
-
-        }
+        text-align: left;        
 
         @include md{
 
@@ -214,7 +202,7 @@
             height: 1px;
             background-color: var(--color-brand-secondary);
 
-            @include sm{
+            @include md{
 
                 bottom: -20px;
 
@@ -253,13 +241,7 @@
 
             }
 
-        }
-
-        @include sm{
-
-            padding-bottom: 30px;
-
-        }
+        }       
 
         @include md{
         
@@ -273,8 +255,16 @@
 
         @include av-font($display-body);
 
+        line-height: 24px;
+
         display: block;
         width: 100%;
+
+        @include md{
+
+            line-height: 26px;
+
+        }
 
         span{
 
@@ -290,7 +280,7 @@
         display: flex;
         justify-content: center;
 
-        @include sm{
+        @include md{
 
             justify-content: flex-start;
 

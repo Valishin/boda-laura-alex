@@ -225,37 +225,78 @@ window.requestAnimationFrame = (() => {
                 secondTextMovement = currentTextMovement.querySelector('.c-animated-text__title--1');
                 secondTextMovement2 = currentTextMovement.querySelector('.c-animated-text__title--2');
             }
-        
-            gsap.fromTo(
-                secondTextMovement,
-                { x: '60%' },
-                {
-                    x: '0%',
-                    ease: "Power0.easeNone",
-                    scrollTrigger: {
-                        markers: false,
-                        trigger: secondTextMovement,
-                        scrub: true,
-                        end: () => `+=${800}`,
-                    }
-                }
-            );
-        
-            if (secondTextMovement2) {
+
+            let mm = gsap.matchMedia()
+
+            mm.add("(max-width: 609px)", () => {
                 gsap.fromTo(
-                    secondTextMovement2,
-                    { x: '30%' },
+                    secondTextMovement,
+                    { x: '60%' },
                     {
-                        x: '38%',
+                        x: '0%',
                         ease: "Power0.easeNone",
                         scrollTrigger: {
                             markers: false,
-                            trigger: secondTextMovement2,
+                            trigger: secondTextMovement,
                             scrub: true,
-                            end: () => `+=${600}`,
+                            end: () => `+=${500}`,
                         }
                     }
                 );
+            })
+
+            mm.add("(min-width: 610px)", () => {
+                gsap.fromTo(
+                    secondTextMovement,
+                    { x: '80%' },
+                    {
+                        x: '0%',
+                        ease: "Power0.easeNone",
+                        scrollTrigger: {
+                            markers: false,
+                            trigger: secondTextMovement,
+                            scrub: true,
+                            end: () => `+=${800}`,
+                        }
+                    }
+                );
+            })
+        
+        
+            if (secondTextMovement2) {
+                mm.add("(max-width: 609px)", () => {
+                    gsap.fromTo(
+                        secondTextMovement2,
+                        { x: '-30%' },
+                        {
+                            x: '0%',
+                            ease: "Power0.easeNone",
+                            scrollTrigger: {
+                                markers: false,
+                                trigger: secondTextMovement2,
+                                scrub: true,
+                                end: () => `+=${500}`,
+                            }
+                        }
+                    );
+                })
+
+                mm.add("(min-width: 610px)", () => {
+                    gsap.fromTo(
+                        secondTextMovement2,
+                        { x: '-40%' },
+                        {
+                            x: '0%',
+                            ease: "Power0.easeNone",
+                            scrollTrigger: {
+                                markers: false,
+                                trigger: secondTextMovement2,
+                                scrub: true,
+                                end: () => `+=${600}`,
+                            }
+                        }
+                    );
+                })
             }
         });
 
@@ -356,14 +397,14 @@ window.requestAnimationFrame = (() => {
                     var tl = gsap.timeline()
 
                     var mySplitText = new SplitText(e, {
-                         type: "lines"
+                         type: "chars, words"
                     })                   
             
-                    tl.from(mySplitText.lines, {
+                    tl.from(mySplitText.chars, {
                         duration: .5,
-                        y: 80,
+                        y: 200,
                         ease: "power1.inOut",
-                        stagger: 0.01,                                               
+                        stagger: 0.03,                                               
                     });
                 },
                 once: true

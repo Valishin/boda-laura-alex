@@ -22,6 +22,22 @@
         position: relative;
         z-index: 1;
 
+        @include only-sm{
+
+            justify-content: center;
+
+        }
+
+    }
+
+    &__col{
+
+        @include only-sm{
+
+            margin-bottom: 24px;
+
+        }
+
     }
 
     &__wrapper-title{

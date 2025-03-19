@@ -10,7 +10,7 @@
 
         $the_img_bg = wp_get_attachment_image( $c_animated_text__image_bg['ID'], 'custom-full', "", array("class" => "c-animated-text__image-bg o-bg-s__image", "data-speed" => "0.7") );
 
-        $the_img_bg_2 = wp_get_attachment_image( $c_animated_text__image_bg['ID'], 'custom-full', "", array("class" => "c-animated-text__image-bg o-bg-s__image", "data-speed" => "1.6") );
+        $the_img_bg_2 = wp_get_attachment_image( $c_animated_text__image_bg['ID'], 'custom-full', "", array("class" => "c-animated-text__image-bg o-bg-s__image", "data-speed" => "1.3") );
         
         ?>
 

@@ -106,7 +106,13 @@
     &__wrapper-title{
 
         overflow: hidden;
-        margin-bottom: 60px;
+        margin-bottom: 0px;
+
+        @include sm{
+
+            margin-bottom: 60px;
+
+        }
 
     }
 
