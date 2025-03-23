@@ -152,6 +152,7 @@
     z-index: 99999;
     cursor: pointer;
     transition: all .3s ease-in-out;
+    opacity: 0;
 
     
     @include sm{
@@ -201,5 +202,12 @@
 .js-text-movement{
 
     text-align: center;
+
+}
+
+#av-barba-container{
+
+    opacity: 0;
+    visibility: visible;
 
 }

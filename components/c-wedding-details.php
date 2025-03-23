@@ -7,7 +7,7 @@ if(av_component_get_option__is_active($component_global_settings)){
     $options = av_component_get_options($component_global_settings);
 
     $tag = av_get_tag_for_title();
-    $the_img = wp_get_attachment_image( $c_wedding_details__image['ID'], 'custom-full', "", array("class" => "c-wedding-details__image c-wedding-details__image o-bg-s__image js-anim-image", "data-speed" => "0.9") );
+    $the_img = wp_get_attachment_image( $c_wedding_details__image['ID'], 'custom-full', "", array("class" => "c-wedding-details__image c-wedding-details__image o-bg-s__image js-anim-image", "data-speed" => "0.1") );
     $the_img_block_1 = wp_get_attachment_image( $c_wedding_details__block_image_1['ID'], 'custom-full', "", array("class" => "c-wedding-details__block-image c-wedding-details__block-image--1 o-bg-s__image js-anim-image", "data-speed" => "0.9") );
     $the_img_block_2 = wp_get_attachment_image( $c_wedding_details__block_image_2['ID'], 'custom-full', "", array("class" => "c-wedding-details__block-image c-wedding-details__block-image--2 o-bg-s__image js-anim-image", "data-speed" => "0.9") );
     $the_img_block_3 = wp_get_attachment_image( $c_wedding_details__block_image_3['ID'], 'custom-full', "", array("class" => "c-wedding-details__block-image c-wedding-details__block-image--3 o-bg-s__image js-anim-image", "data-speed" => "0.9") );

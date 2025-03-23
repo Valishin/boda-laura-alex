@@ -41,8 +41,11 @@
     <!-- LOADER -->
     <?php  include( locate_template('blocks/b-loader.php') ); ?>
 
-    <!-- LOADER -->
+    <!-- DEBUG -->
     <?php  include( locate_template('blocks/b-debug.php') ); ?>
+
+    <!-- START PAGE -->
+    <?php include( locate_template('blocks/b-start-page.php')); ?>
 
     <!-- HEADER -->
     <?php include( locate_template('blocks/b-header.php') ); ?>
@@ -69,6 +72,6 @@
     <div class="c-gallery__wrapper-velo-image | js-gallery__velo-image"></div>
     <div id="smooth-wrapper">
         <div id="smooth-content">
-            <main id="av-barba-container" data-barba="container" data-barba-namespace="<?php echo $current_slug; ?>" data-the-id="<?php echo $current_ID; ?>">
+            <main id="av-barba-container" class="no-scroll" data-barba="container" data-barba-namespace="<?php echo $current_slug; ?>" data-the-id="<?php echo $current_ID; ?>">
 
                 <div class="av-main | js-smooth-scroll">

@@ -20,6 +20,7 @@ body{
 body{
 
     background-color: var(--color-bg-primary);
+    overflow: hidden;
 
     &.is-debug{
 

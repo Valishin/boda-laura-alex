@@ -6,7 +6,7 @@
 
         $options = av_component_get_options($component_global_settings);
 
-        $the_img = wp_get_attachment_image( $c_image_text__image['ID'], 'custom-full', "", array("class" => "c-image-text__image o-bg-s__image", "data-speed" => "0.9") );
+        $the_img = wp_get_attachment_image( $c_image_text__image['ID'], 'custom-full', "", array("class" => "c-image-text__image o-bg-s__image", "data-speed" => "0.1") );
 
         $col_image = "o-col-6@md o-col-8@sm o-col-4@xs";
         $col_text = "o-col-6@md o-col-8@sm o-col-4@xs";
@@ -30,7 +30,7 @@
                         <div class="c-image-text__col c-image-text__col--image <?php echo $col_image; ?>" >
                             <?php if(!!$the_img){ ?>
                                 <div class="c-image-text__wrapper">
-                                    <div class="c-image-text__wrapper-image shadow-img js-anim-image">
+                                    <div class="c-image-text__wrapper-image">
                                         <?php echo $the_img; ?>
                                     </div>
                                 </div>

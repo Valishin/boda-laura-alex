@@ -6,8 +6,8 @@
     width: 100%;
     z-index: 9999999;
     transition: all .5s ease-in-out;
-    opacity: 1;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
 
     &.has-transform{
 

@@ -19,8 +19,10 @@ const lightbox = new PhotoSwipeLightbox({
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText)
 
+let smoother;
+
 const av_smooth_scroller_init = () => {
-    ScrollSmoother.create({
+    smoother = ScrollSmoother.create({
         smooth: 1.6,   // seconds it takes to "catch up" to native scroll position
         effects: true, // look for data-speed and data-lag attributes on elements and animate accordingly
         ignoreMobileResize: false,
@@ -74,6 +76,27 @@ window.requestAnimationFrame = (() => {
 
     }
 
+    const av_start_page = () => {
+
+        let node = document.querySelector('.b-start-page')
+        node.style.opacity = 1;  
+        node.style.visibility = 'visible'
+        const nodeBarba = document.querySelector('#av-barba-container')
+        const nodeHeader = document.querySelector('.b-header')
+
+        node.addEventListener('click', ()=>{
+            node.style.top = '-100%'
+            nodeBarba.style.opacity = 1
+            nodeBarba.style.visibility = 'visible'
+            nodeHeader.style.opacity = 1
+            nodeHeader.style.visibility = 'visible'
+            document.body.style.overflow = 'auto'
+            av_start_funcs();
+
+        })
+
+    }
+
     const av_remove_loader = () => {
 
         const jsLoader = document.querySelector('.js-loader')
@@ -82,27 +105,31 @@ window.requestAnimationFrame = (() => {
             // .addSpace("+=0.2")
             .to( null, {}, "+=0.2" )
                 .call( () => {
-                    debugger_tool();                    
-                    av_start_funcs();
+                    debugger_tool()
+                    av_split_text_anim()  
+                    blockScroll()                                                       
                 })
             // .addSpace("+=0.2")
                 .call( () => {
-                    // scrollbar.scrollTo(0, 0, 200);
+                    scrollbar.scrollTo(0, 0, 200);
                 })
             .addLabel('start') 
                 .to(
                     jsLoader,
-                    0.4,
+                    0.5,
                     {
                         opacity: 0,
-                        ease: "power1.out"
+                        ease: "power1.out",
+                        onComplete: () => {
+                            av_start_page()   
+                        }
                     },
-                    'start'
+                    'start',
                 )
                 .call( () => {
-                    jsLoader.remove();                   
+                    jsLoader.remove()                                   
                 })
-            ;
+            
 
     }
 
@@ -389,22 +416,38 @@ window.requestAnimationFrame = (() => {
 
     const av_split_text_anim = () => {
 
-        const nodeAnim = document.querySelectorAll('.js-split-text')
-
-        nodeAnim.forEach(e => {
+        const nodeAnim = document.querySelectorAll('.js-split-text')        
+        nodeAnim.forEach(e => {            
             ScrollTrigger.batch(e,{
                 onEnter: () => {
+                    let timeDuration = 1
+                    let stagger = 0.03
+                    if(e.classList.contains('js-split-text--start')){
+                        timeDuration = 0.8
+                        stagger = 0.08
+                    }
                     var tl = gsap.timeline()
 
                     var mySplitText = new SplitText(e, {
                          type: "chars, words"
                     })                   
             
-                    tl.from(mySplitText.chars, {
-                        duration: .5,
+                    tl.fromTo(mySplitText.chars, {
+                        opacity: 0,                                               
                         y: 200,
+                    }, {
+                        opacity: 1,
+                        y: 0,
+                        duration: timeDuration,                        
                         ease: "power1.inOut",
-                        stagger: 0.03,                                               
+                        stagger: stagger,
+                        onComplete: ()=>{
+                            if(e.classList.contains('js-split-text--start')){
+                                document.querySelector('.b-start-page__icon').style.opacity = 1
+                                document.querySelector('.b-start-page__click').style.opacity = 1
+                                document.querySelector('.whatsapp__wrapper').style.opacity = 1
+                            }
+                        }
                     });
                 },
                 once: true
@@ -575,7 +618,7 @@ window.requestAnimationFrame = (() => {
     // --- ON LOAD --------------------------------------
     document.addEventListener('DOMContentLoaded', () => {
         av_remove_loader()
-        lightbox.init();
+        lightbox.init()
 
         const targetDate = new Date("2025-12-06 08:37:00").getTime(); // Fecha objetivo 
         startCountdown(targetDate);
