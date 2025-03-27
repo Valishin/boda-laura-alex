@@ -7,12 +7,6 @@
     position: relative;
     z-index: 2;
     background-color: var(--bg-color);
-    
-    @include md{
-        
-        height: 100vh;
-
-    }
 
     &__inner{
 
@@ -22,7 +16,7 @@
 
         @include md{
 
-            padding: 0px;
+            padding: 90px 0px;
 
         }
 
