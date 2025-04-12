@@ -16,6 +16,14 @@ function av_enqueues(){
                 wp_register_style('Raleway', ASSETS_DIRECTORY . '/fonts/Raleway/Raleway.css', false, false );
                 wp_enqueue_style('Raleway');
 
+                // FONT FAMILY
+                wp_register_style('Rochester', ASSETS_DIRECTORY . '/fonts/Rochester/Rochester.css', false, false );
+                wp_enqueue_style('Rochester');
+
+                // FONT FAMILY
+                wp_register_style('Merienda', ASSETS_DIRECTORY . '/fonts/Merienda/Merienda.css', false, false );
+                wp_enqueue_style('Merienda');
+
             // CUSTOM CSS
 
                 // APP CSS

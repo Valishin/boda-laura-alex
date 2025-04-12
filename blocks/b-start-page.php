@@ -10,7 +10,7 @@
             <div class="b-start-page__col o-col-12@md o-col-8@sm o-col-4@xs">
                 <div class="b-start-page__wrapper-content">
                     <div class="b-start-page__wrapper-title">
-                        <div class="b-start-page__title o-font-display-2 js-split-text js-split-text--start"><?php echo $b_start_page__title; ?></div>
+                        <div class="b-start-page__title o-font-display-1 js-split-text js-split-text--start"><?php echo $b_start_page__title; ?></div>
                     </div>
                     <div class="b-start-page__wrapper-icon">
                         <?php echo $the_icon; ?>
