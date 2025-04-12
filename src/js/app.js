@@ -107,7 +107,7 @@ window.requestAnimationFrame = (() => {
                 .call( () => {
                     debugger_tool()
                     av_split_text_anim()  
-                    blockScroll()                                                       
+                    // blockScroll()                                                       
                 })
             // .addSpace("+=0.2")
                 .call( () => {
