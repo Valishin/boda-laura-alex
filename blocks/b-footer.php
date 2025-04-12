@@ -25,7 +25,7 @@
             <div class="b-footer__col o-col-12@md o-col-8@sm o-col-4@xs">
                 <div class="b-footer__wrapper-text">
                     <div class="b-footer__wrapper-title">
-                        <div class="b-footer__title js-split-text o-font-display-1">¡Os esperamos!</div>
+                        <div class="b-footer__title js-split-text o-font-display-2">¡Os esperamos!</div>
                     </div>
                     <div class="b-footer__wrapper-description">
                         <div class="b-footer__descritpion js-split-text o-font-display-body">Avísanos si vas a venir a través de nuestro formulario de contacto o por WhatsApp.</div>

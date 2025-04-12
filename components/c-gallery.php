@@ -22,7 +22,7 @@ if(av_component_get_option__is_active($component_global_settings)){
                         <div class="c-gallery__container | o-container">                            
                             <div class="c-gallery__col | o-col-12@md | o-col-8@sm | o-col-4@xs">
                                 <div class="c-gallery__wrapper-title">
-                                    <div class="c-gallery__title o-font-display-1 js-split-text js-text-movement js-text-movement--2">
+                                    <div class="c-gallery__title o-font-display-2 js-split-text js-text-movement js-text-movement--2">
                                         <?php echo $c_gallery__title; ?>
                                     </div>
                                 </div>
