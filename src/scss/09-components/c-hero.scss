@@ -63,11 +63,13 @@
         display: block;
         width: calc(var(--col-1) * 2);
         text-align: end;
+        line-height: 18px;
 
         @include sm{
 
             width: calc(var(--col-1) * 3);
             text-align: start;
+            line-height: 22px;
 
         }
 

@@ -43,7 +43,7 @@ if(av_component_get_option__is_active($component_global_settings)){
                                 if(!!$c_hero__overline){                                    
                                     ?>
                                     <div class="c-hero__wrapper-overline">
-                                        <p class="c-hero__overline o-font-display-overline js-split-text"><?php echo $c_hero__overline; ?></p>
+                                        <p class="c-hero__overline o-font-display-button js-split-text"><?php echo $c_hero__overline; ?></p>
                                     </div>                                     
                                     <?php
                                 }                                                               
