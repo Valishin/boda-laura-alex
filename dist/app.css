@@ -4810,6 +4810,9 @@ a {
   padding-bottom: 56px;
   position: relative;
 }
+.c-animated-text__title {
+  white-space: nowrap;
+}
 .c-animated-text__wrapper-image {
   display: block;
   width: 100%;

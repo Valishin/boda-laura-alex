@@ -28,7 +28,7 @@
                         <div class="b-footer__title js-split-text o-font-display-2">¡Os esperamos!</div>
                     </div>
                     <div class="b-footer__wrapper-description">
-                        <div class="b-footer__descritpion js-split-text o-font-display-body">Avísanos si vas a venir a través de nuestro formulario de contacto o por WhatsApp.</div>
+                        <div class="b-footer__descritpion js-split-text o-font-display-body">Avísanos si vas a venir a través de nuestro formulario de contacto o por WhatsApp.</br>Fecha límite de confirmación 25 de septiembre de 2025</div>
                     </div>
                 </div>
             </div>

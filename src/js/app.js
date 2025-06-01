@@ -92,7 +92,6 @@ window.requestAnimationFrame = (() => {
             nodeHeader.style.visibility = 'visible'
             document.body.style.overflow = 'auto'
             av_start_funcs();
-
         })
 
     }
