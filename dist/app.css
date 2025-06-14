@@ -4460,6 +4460,8 @@ a {
   display: flex;
   justify-content: center;
   text-align: center;
+  padding: 5px;
+  color: black;
 }
 .c-form__button {
   transition: all 0.3s ease-in-out;
@@ -4470,6 +4472,7 @@ a {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  color: black;
 }
 .c-form__button:hover {
   color: var(--color-red);

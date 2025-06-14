@@ -29,7 +29,10 @@
 
         display: flex;
         justify-content: center;
-        text-align: center;        
+        text-align: center; 
+        padding: 5px;   
+        // border: 1px solid black;    
+        color: black;
 
     }
 
@@ -43,6 +46,7 @@
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+        color: black;
 
         &:hover{
 
